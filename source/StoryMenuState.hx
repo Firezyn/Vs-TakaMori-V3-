@@ -29,7 +29,7 @@ class StoryMenuState extends MusicBeatState
 		['Sorairo-Days', 'Live-Again'],
 		['Sparks', 'Cursed-Night'],
 		['Myth-or-treat'],
-		['Vampire'],
+		['Vampire', 'Red-Shift'],
 		['Red', 'End-of-a-life', 'The-Bully'],
 		['Phoenix-Bass', 'Chaos', 'Monocalli', 'Myth-Trouble'],
 		['Mining', 'Little-rat'],
@@ -284,8 +284,15 @@ class StoryMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
 				grpWeekText.members[curWeek].startFlashing();
+				if (curWeek == 5)
+					{
+						stopspamming = true;
+					}
+				else 
+				{
 				grpWeekCharacters.members[1].animation.play('bfConfirm');
 				stopspamming = true;
+				}
 			}
 
 			PlayState.storyPlaylist = weekData[curWeek];
