@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tkbeach_bg.png">
+
+<SubTexture name="takabeach bg0000" x="0" y="0" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+<SubTexture name="takabeach bg0001" x="996" y="0" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+<SubTexture name="takabeach bg0002" x="0" y="575" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+<SubTexture name="takabeach bg0003" x="996" y="575" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+<SubTexture name="takabeach bg0004" x="0" y="1150" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+<SubTexture name="takabeach bg0005" x="996" y="575" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+<SubTexture name="takabeach bg0006" x="0" y="575" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+<SubTexture name="takabeach bg0007" x="996" y="0" width="996" height="575" frameX="0" frameY="0" frameWidth="996" frameHeight="575"/>
+
+</TextureAtlas>

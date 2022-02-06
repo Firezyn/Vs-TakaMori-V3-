@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="calli_cross.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Calli Cross0000" x="0" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0001" x="0" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0002" x="1200" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0003" x="1200" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0004" x="2400" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0005" x="2400" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0006" x="0" y="693" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0007" x="0" y="693" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0008" x="1200" y="693" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0009" x="1200" y="693" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0010" x="2400" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0011" x="2400" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0012" x="1200" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0013" x="1200" y="0" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0014" x="1200" y="693" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0015" x="1200" y="693" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0016" x="0" y="693" width="1200" height="693"/>
+	<SubTexture name="Calli Cross0017" x="0" y="693" width="1200" height="693"/>
+</TextureAtlas>

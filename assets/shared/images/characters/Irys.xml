@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Irys.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Irys Down Pose0000" x="0" y="0" width="500" height="300" frameX="0" frameY="-75" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0001" x="0" y="0" width="500" height="300" frameX="0" frameY="-75" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0002" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0003" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0004" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0005" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0006" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0007" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0008" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0009" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0010" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0011" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0012" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0013" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Down Pose0014" x="500" y="0" width="450" height="375" frameX="-25" frameY="0" frameWidth="500" frameHeight="375"/>
+	<SubTexture name="Irys Idle0000" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0001" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0002" x="1350" y="0" width="450" height="350" frameX="0" frameY="-50" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0003" x="1350" y="0" width="450" height="350" frameX="0" frameY="-50" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0004" x="0" y="400" width="430" height="370" frameX="-10" frameY="-30" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0005" x="0" y="400" width="430" height="370" frameX="-10" frameY="-30" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0006" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0007" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0008" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0009" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0010" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0011" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0012" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0013" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Idle0014" x="950" y="0" width="400" height="400" frameX="-25" frameY="0" frameWidth="450" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0000" x="430" y="400" width="500" height="400"/>
+	<SubTexture name="Irys Left Pose0001" x="430" y="400" width="500" height="400"/>
+	<SubTexture name="Irys Left Pose0002" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0003" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0004" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0005" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0006" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0007" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0008" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0009" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0010" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0011" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0012" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0013" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Left Pose0014" x="930" y="400" width="400" height="400" frameX="-100" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0000" x="1330" y="400" width="500" height="400"/>
+	<SubTexture name="Irys Right Pose0001" x="1330" y="400" width="500" height="400"/>
+	<SubTexture name="Irys Right Pose0002" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0003" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0004" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0005" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0006" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0007" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0008" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0009" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0010" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0011" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0012" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0013" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Right Pose0014" x="0" y="800" width="400" height="400" frameX="0" frameY="0" frameWidth="500" frameHeight="400"/>
+	<SubTexture name="Irys Up Pose0000" x="400" y="800" width="300" height="500" frameX="0" frameY="0" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0001" x="400" y="800" width="300" height="500" frameX="0" frameY="0" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0002" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0003" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0004" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0005" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0006" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0007" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0008" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0009" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0010" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0011" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0012" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0013" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+	<SubTexture name="Irys Up Pose0014" x="700" y="800" width="350" height="450" frameX="0" frameY="-50" frameWidth="350" frameHeight="500"/>
+</TextureAtlas>
