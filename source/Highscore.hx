@@ -77,12 +77,16 @@ class Highscore
 	}
 
 	public static function getScore(song:String, diff:Int):Int
-	{
-		if (!songScores.exists(formatSong(song, diff)))
-			setScore(formatSong(song, diff), 0);
-
-		return songScores.get(formatSong(song, diff));
-	}
+		{
+			var lowercaseSong:String = song.toLowerCase();
+	
+			if (!songScores.exists(formatSong(lowercaseSong, diff)))
+			{
+				setScore(formatSong(lowercaseSong, diff), 0);
+			}
+	
+			return songScores.get(formatSong(lowercaseSong, diff));
+		}
 
 	public static function getWeekScore(week:Int, diff:Int):Int
 	{
