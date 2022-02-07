@@ -46,12 +46,6 @@ class DialogueBox extends FlxSpriteGroup
 			case 'thorns':
 				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'hinotori' | 'goodbye-declaration':
-				FlxG.sound.playMusic(Paths.music('kripsy', 'week1'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'grim-reaper' | 'envy-baby':
-				FlxG.sound.playMusic(Paths.music('boppin', 'week2'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
 		}
 
 		bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
@@ -94,7 +88,7 @@ class DialogueBox extends FlxSpriteGroup
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
 
-			case 'hinotori' | 'goodbye-declaration':
+			default:
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
@@ -104,35 +98,6 @@ class DialogueBox extends FlxSpriteGroup
 				box.x = 100;
 				box.y = 400;
 
-			case 'grim-reaper' | 'envy-baby':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
-				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
-				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
-				box.width = 200;
-				box.height = 200;
-				box.x = 100;
-				box.y = 400;
-
-		     case 'sorairo-days':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
-				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
-				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
-				box.width = 200;
-				box.height = 200;
-				box.x = 100;
-				box.y = 400;
-
-			case 'live-again':
-				hasDialog = true;
-				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
-				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
-				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
-				box.width = 200;
-				box.height = 200;
-				box.x = 100;
-				box.y = 400;
 		}
 
 		this.dialogueList = dialogueList;
@@ -140,8 +105,29 @@ class DialogueBox extends FlxSpriteGroup
 		if (!hasDialog)
 			return;
 		switch (PlayState.SONG.song.toLowerCase())
-		{
-			case 'hinotori' |'goodbye-declaration':
+		{	
+			case 'senpai' |'roses' | 'thorns':
+	    	{
+				portraitLeft = new FlxSprite(-20, 40);
+				portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
+				portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.updateHitbox();
+				portraitLeft.scrollFactor.set();
+				add(portraitLeft);
+				portraitLeft.visible = false;
+
+				portraitRight = new FlxSprite(0, 40);
+				portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
+				portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+				portraitRight.updateHitbox();
+				portraitRight.scrollFactor.set();
+				add(portraitRight);
+				portraitRight.visible = false;
+
+			}
+			case 'hinotori' |'goodbye-declaration': 
 			{
 				portraitLeft = new FlxSprite(-800, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('portraits/kiara', 'shared');
@@ -169,7 +155,7 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitRight);
 				portraitRight.visible = false;
 			}
-			case 'sorairo-days' | 'live-again': 
+			case 'grim-reaper' | 'sorairo-days' |'live-again':
 			{
 				portraitLeft = new FlxSprite(-800, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
@@ -226,21 +212,8 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitRight);
 				portraitRight.visible = false;
 			}
-
-			default:
-			{
-				portraitRight = new FlxSprite(0, 40);
-				portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
-				portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-				portraitRight.updateHitbox();
-				portraitRight.scrollFactor.set();
-				add(portraitRight);
-				portraitRight.visible = false;
-
-			}
+	
 		}
-		
 
 		box.animation.play('normalOpen');
 		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));

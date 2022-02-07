@@ -752,12 +752,18 @@ class PlayState extends MusicBeatState
 			 {
 						defaultCamZoom = 0.5;
 						curStage = 'red-shift';
-						var bg:FlxSprite = new FlxSprite(-1000, -425).loadGraphic(Paths.image('stages/red_shift'));
+						var bg:FlxSprite = new FlxSprite(-1000, -425).loadGraphic(Paths.image('stages/red_shift/da_moon'));
 						bg.antialiasing = true;
 						bg.setGraphicSize(Std.int(bg.width * 1.2));
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
 						add(bg);
+
+						var platform:FlxSprite = new FlxSprite(-1000, -425).loadGraphic(Paths.image('stages/red_shift/platform'));
+						platform.antialiasing = true;
+						platform.scrollFactor.set(0.9, 0.9);
+						platform.active = false;
+						add(platform);
 		     }
 			 case 'end-of-calli':
 			 {
