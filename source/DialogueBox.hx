@@ -341,6 +341,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.visible = false;
 				if (!portraitLeft.visible)
 				{
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('kiaraText'), 0.6)];
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('enter');
 				}
@@ -348,6 +349,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.visible = false;
 				if (!portraitRight.visible)
 				{
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
 				}
