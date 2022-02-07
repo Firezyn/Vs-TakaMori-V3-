@@ -350,8 +350,17 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('envy-baby/envyDialogue'));
 			case 'sorairo-days':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('sorairo-days/sorairoDialogue'));
-			case 'live-again':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('live-again/liveDialogue'));
+			case 'vampire':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('vampire/vampireDialogue'));
+			case 'red-shift':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('red-shift/redshiftDialogue'));
+			case 'red':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('red/redDialogue'));
+			case 'the-bully':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('the-bully/bullyDialogue'));
+			case 'end-of-a-life':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('end-of-a-life/endDialogue'));
+	
 
 		}
 
@@ -684,7 +693,7 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.7;
 						curStage = 'takamoribeach';
 
-						var bg:FlxSprite = new FlxSprite(-640, 0);
+						var bg:FlxSprite = new FlxSprite(-650, -100);
 						bg.frames = Paths.getSparrowAtlas('stages/tkbeach/tkbeach_bg');
 						bg.animation.addByPrefix('idle', 'takabeach bg', 24, true);
 						bg.setGraphicSize(Std.int(bg.width * 2.5));
@@ -1077,22 +1086,22 @@ class PlayState extends MusicBeatState
 					if (PlayState.SONG.song.toLowerCase()=='vampire')
 					{
 						boyfriend.x -= 20;
-						boyfriend.y += 275;
-						dad.x -= 220;
+						boyfriend.y += 175;
+						dad.x -= 320;
 						dad.y += 350;
 						gf.x -= 220;
-						gf.y -= 100;
+						gf.y -= 200;
 						gf.y += 350;			
 					} 
 				
 				else
 				{
 					boyfriend.x -= 20;
-					boyfriend.y += 350;
+					boyfriend.y += 250;
 					dad.x -= 200;
-					dad.y += 350;
+					dad.y += 250;
 					gf.x -= 220;
-					gf.y -= 100;
+					gf.y -= 200;
 					gf.y += 350;
 				}
 
@@ -1608,17 +1617,13 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
-				case 'hinotori':
+				case 'hinotori' | 'goodbye-declaration' | 'grim-reaper' | 'envy-baby':
 					schoolIntro(doof);
-				case 'goodbye-declaration':
+				case 'sorairo-days' | 'live-again':
 					schoolIntro(doof);
-				case 'grim-reaper':
+				case 'vampire' | 'red-shift':
 					schoolIntro(doof);
-				case 'envy-baby':
-					schoolIntro(doof);
-				case 'sorairo-days':
-					schoolIntro(doof);
-				case 'live-again':
+				case 'red' | 'the-bully' | 'end-of-a-life':
 					schoolIntro(doof);
 				default:
 					startCountdown();

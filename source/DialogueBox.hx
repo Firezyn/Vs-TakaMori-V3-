@@ -88,7 +88,27 @@ class DialogueBox extends FlxSpriteGroup
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
 
-			default:
+			case 'hinotori' |'goodbye-declaration' | 'vampire' |'red-shift': 
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x = 100;
+				box.y = 400;
+
+			case 'grim-reaper' |'envy-baby' | 'red' | 'bully' | 'end-of-a-life': 
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
+				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
+				box.animation.addByIndices('normal', 'speech bubble normal', [4], "", 24);
+				box.width = 200;
+				box.height = 200;
+				box.x = 100;
+				box.y = 400;
+		
+			case 'sorairo-days' |'live-again': 
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
@@ -155,6 +175,90 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitRight);
 				portraitRight.visible = false;
 			}
+			case 'vampire' |'red-shift': 
+			{
+				portraitLeft = new FlxSprite(-800, 40);
+				portraitLeft.frames = Paths.getSparrowAtlas('portraits/kiara', 'shared');
+				portraitLeft.animation.addByPrefix('enter', 'Kiara Portrait Enter instance 1', 24, false);
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.updateHitbox();
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
+				portraitLeft.scrollFactor.set();
+				portraitLeft.x = -700;
+				portraitLeft.y = -750;
+				add(portraitLeft);
+				portraitLeft.visible = false;
+
+				portraitRight = new FlxSprite(0, 40);
+				portraitRight.frames = Paths.getSparrowAtlas('portraits/foob','shared');
+				portraitRight.animation.addByPrefix('enter', 'Foob portrait enter instance 1', 24, false);
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.7));
+				portraitRight.updateHitbox();
+				portraitRight.scrollFactor.set();
+				portraitRight.width = 100;
+				portraitRight.height = 100;
+				portraitRight.x = 750;
+				portraitRight.y = 200;
+				add(portraitRight);
+				portraitRight.visible = false;
+			}
+			case 'envy-baby': 
+			{
+				portraitLeft = new FlxSprite(-800, 40);
+				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
+				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.updateHitbox();
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
+				portraitLeft.y = -750;
+				portraitLeft.x = -750;
+				portraitLeft.scrollFactor.set();
+				add(portraitLeft);
+				portraitLeft.visible = false;
+
+				portraitRight = new FlxSprite(0, 40);
+				portraitRight.frames = Paths.getSparrowAtlas('portraits/bf','shared');
+				portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter instance 1', 24, false);
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.7));
+				portraitRight.updateHitbox();
+				portraitRight.scrollFactor.set();
+				portraitRight.width = 100;
+				portraitRight.height = 100;
+				portraitRight.x = 750;
+				portraitRight.y = 200;
+				add(portraitRight);
+				portraitRight.visible = false;
+			}
+			case 'red' | 'bully' | 'end-of-a-life': 
+			{
+				portraitLeft = new FlxSprite(-800, 40);
+				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
+				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.updateHitbox();
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
+				portraitLeft.y = -750;
+				portraitLeft.x = -750;
+				portraitLeft.scrollFactor.set();
+				add(portraitLeft);
+				portraitLeft.visible = false;
+
+				portraitRight = new FlxSprite(0, 40);
+				portraitRight.frames = Paths.getSparrowAtlas('portraits/aloe','shared');
+				portraitRight.animation.addByPrefix('enter', 'Aloe portrait enter instance 1', 24, false);
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.7));
+				portraitRight.updateHitbox();
+				portraitRight.scrollFactor.set();
+				portraitRight.width = 100;
+				portraitRight.height = 100;
+				portraitRight.x = 750;
+				portraitRight.y = 200;
+				add(portraitRight);
+				portraitRight.visible = false;
+			}
 			case 'grim-reaper' | 'sorairo-days' |'live-again':
 			{
 				portraitLeft = new FlxSprite(-800, 40);
@@ -184,34 +288,6 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.visible = false;
 			}
 
-			case 'envy-baby': 
-			{
-				portraitLeft = new FlxSprite(-800, 40);
-				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
-				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
-				portraitLeft.y = -750;
-				portraitLeft.x = -750;
-				portraitLeft.scrollFactor.set();
-				add(portraitLeft);
-				portraitLeft.visible = false;
-
-				portraitRight = new FlxSprite(0, 40);
-				portraitRight.frames = Paths.getSparrowAtlas('portraits/bf','shared');
-				portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter instance 1', 24, false);
-				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.7));
-				portraitRight.updateHitbox();
-				portraitRight.scrollFactor.set();
-				portraitRight.width = 100;
-				portraitRight.height = 100;
-				portraitRight.x = 750;
-				portraitRight.y = 200;
-				add(portraitRight);
-				portraitRight.visible = false;
-			}
 	
 		}
 
@@ -337,11 +413,21 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (curCharacter)
 		{
-			case 'dad':
+			case 'kiara':
 				portraitRight.visible = false;
 				if (!portraitLeft.visible)
 				{
 					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('kiaraText'), 0.6)];
+					swagDialogue.color = 0xFFff6600;
+					portraitLeft.visible = true;
+					portraitLeft.animation.play('enter');
+				}
+			case 'calli':
+				portraitRight.visible = false;
+				if (!portraitLeft.visible)
+				{
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('calliText'), 0.6)];
+					swagDialogue.color = 0xFFf556ba;
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('enter');
 				}
@@ -350,6 +436,35 @@ class DialogueBox extends FlxSpriteGroup
 				if (!portraitRight.visible)
 				{
 					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
+					swagDialogue.color = 0xFF3F2021;
+					portraitRight.visible = true;
+					portraitRight.animation.play('enter');
+				}
+			
+			case 'kuso':
+				portraitLeft.visible = false;
+				if (!portraitRight.visible)
+				{
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('kiaraText'), 0.6)];
+					swagDialogue.color = 0xFFff6600;
+					portraitRight.visible = true;
+					portraitRight.animation.play('enter');
+				}
+			case 'foob':
+				portraitLeft.visible = false;
+				if (!portraitRight.visible)
+				{
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('boyfriendText'), 0.6)];
+					swagDialogue.color = 0xFF0C94F5;
+					portraitRight.visible = true;
+					portraitRight.animation.play('enter');
+				}
+			case 'aloe':
+				portraitLeft.visible = false;
+				if (!portraitRight.visible)
+				{
+					swagDialogue.sounds = [FlxG.sound.load(Paths.sound('boyfriendText'), 0.6)];
+					swagDialogue.color = 0xFFa222b3;
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
 				}
