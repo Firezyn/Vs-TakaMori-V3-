@@ -770,7 +770,7 @@ class PlayState extends MusicBeatState
 
 						var platform:FlxSprite = new FlxSprite(-1000, -425).loadGraphic(Paths.image('stages/red_shift/platform'));
 						platform.antialiasing = true;
-						platform.scrollFactor.set(0.9, 0.9);
+
 						platform.active = false;
 						add(platform);
 		     }
@@ -1201,12 +1201,14 @@ class PlayState extends MusicBeatState
 					}
 
 					else 
+					{
 						boyfriend.x += 300;
 						boyfriend.y += 275;
 						dad.x -= 175;
 						dad.y += 350;
-						gf.x -= 175;
-						gf.y += 225;
+						gf.x -= 125;
+						gf.y += 275;
+					}
 				}
 			case 'end-of-calli':
 

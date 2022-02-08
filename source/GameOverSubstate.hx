@@ -27,6 +27,8 @@ class GameOverSubstate extends MusicBeatSubstate
 				daBf = 'aloo';
 			case 'foob':
 				daBf = 'foob';
+			case 'foob-moon':
+				daBf = 'foob-moon';
 			case 'camellia':
 				daBf = 'camellia';
 			default:

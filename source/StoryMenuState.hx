@@ -288,11 +288,16 @@ class StoryMenuState extends MusicBeatState
 					{
 						stopspamming = true;
 					}
-				else 
-				{
-				grpWeekCharacters.members[1].animation.play('bfConfirm');
-				stopspamming = true;
-				}
+				else if (curWeek == 6)
+					{
+						grpWeekCharacters.members[1].animation.play('aloeConfirm');
+						stopspamming = true;
+					}
+				else
+					{
+					grpWeekCharacters.members[1].animation.play('bfConfirm');
+					stopspamming = true;
+					}
 			}
 
 			PlayState.storyPlaylist = weekData[curWeek];
