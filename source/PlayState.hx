@@ -778,7 +778,7 @@ class PlayState extends MusicBeatState
 			 {
 						defaultCamZoom = 0.75;
 						curStage = 'end-of-calli';
-						var bg:FlxSprite = new FlxSprite(-575, -125);
+						var bg:FlxSprite = new FlxSprite(-575, -100);
 						bg.frames = Paths.getSparrowAtlas('stages/cross/calli_cross');
 						bg.setGraphicSize(Std.int(bg.width * 2.0));
 						bg.animation.addByPrefix('idle', 'Calli Cross', 24, true);
@@ -1087,8 +1087,8 @@ class PlayState extends MusicBeatState
 					{
 						boyfriend.x -= 20;
 						boyfriend.y += 175;
-						dad.x -= 320;
-						dad.y += 350;
+						dad.x -= 200;
+						dad.y += 250;
 						gf.x -= 220;
 						gf.y -= 200;
 						gf.y += 350;			
@@ -1190,32 +1190,32 @@ class PlayState extends MusicBeatState
 				{
 					if (PlayState.SONG.song.toLowerCase()=='red-shift-ex')
 					{
-						boyfriend.x += 300;
-						boyfriend.y += 50;
+						boyfriend.x += 200;
+						boyfriend.y -= 50;
 						boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.9));
-						dad.x -= 200;
+						dad.x -= 175;
 						dad.y += 350;
 						gf.visible = false;
-						gf.x -= 200;
-						gf.y += 250;
+						gf.x -= 175;
+						gf.y += 225;
 					}
 
 					else 
 						boyfriend.x += 300;
-						boyfriend.y += 250;
-						dad.x -= 200;
+						boyfriend.y += 275;
+						dad.x -= 175;
 						dad.y += 350;
-						gf.x -= 100;
-						gf.y += 250;
+						gf.x -= 175;
+						gf.y += 225;
 				}
 			case 'end-of-calli':
 
 					boyfriend.x += 0;
-					boyfriend.y += 265;
+					boyfriend.y += 290;
 					dad.x -= 200;
-					dad.y += 275;
+					dad.y += 300;
 					gf.x -= 100;
-					gf.y += 225;
+					gf.y += 250;
 					camHUD.visible = false;
 
 							new FlxTimer().start(3.7, function(tmr:FlxTimer)

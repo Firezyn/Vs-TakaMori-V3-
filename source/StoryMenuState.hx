@@ -30,7 +30,7 @@ class StoryMenuState extends MusicBeatState
 		['Sparks', 'Cursed-Night'],
 		['Myth-or-treat'],
 		['Vampire', 'Red-Shift'],
-		['Red', 'End-of-a-life', 'The-Bully'],
+		['Red', 'The-Bully', 'End-of-a-life'],
 		['Phoenix-Bass', 'Chaos', 'Monocalli', 'Myth-Trouble'],
 		['Mining', 'Little-rat'],
 		['Bare-your-teeth', 'Joy-with-you']

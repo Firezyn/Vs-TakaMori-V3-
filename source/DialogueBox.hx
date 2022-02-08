@@ -193,12 +193,12 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.frames = Paths.getSparrowAtlas('portraits/foob','shared');
 				portraitRight.animation.addByPrefix('enter', 'Foob portrait enter instance 1', 24, false);
 				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.7));
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.9));
 				portraitRight.updateHitbox();
 				portraitRight.scrollFactor.set();
 				portraitRight.width = 100;
 				portraitRight.height = 100;
-				portraitRight.x = 750;
+				portraitRight.x = 700;
 				portraitRight.y = 200;
 				add(portraitRight);
 				portraitRight.visible = false;
@@ -239,7 +239,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
-				portraitLeft.y = -750;
+				portraitLeft.y = -950;
 				portraitLeft.x = -750;
 				portraitLeft.scrollFactor.set();
 				add(portraitLeft);
@@ -249,12 +249,12 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.frames = Paths.getSparrowAtlas('portraits/aloe','shared');
 				portraitRight.animation.addByPrefix('enter', 'Aloe portrait enter instance 1', 24, false);
 				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.7));
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.9));
 				portraitRight.updateHitbox();
 				portraitRight.scrollFactor.set();
 				portraitRight.width = 100;
 				portraitRight.height = 100;
-				portraitRight.x = 750;
+				portraitRight.x = 700;
 				portraitRight.y = 200;
 				add(portraitRight);
 				portraitRight.visible = false;
