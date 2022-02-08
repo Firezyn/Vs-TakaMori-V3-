@@ -154,7 +154,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.animation.addByPrefix('enter', 'Kiara Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.175));
 				portraitLeft.scrollFactor.set();
 				portraitLeft.x = -700;
 				portraitLeft.y = -750;
@@ -182,9 +182,9 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.animation.addByPrefix('enter', 'Kiara Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.175));
 				portraitLeft.scrollFactor.set();
-				portraitLeft.x = -700;
+				portraitLeft.x = -1000;
 				portraitLeft.y = -750;
 				add(portraitLeft);
 				portraitLeft.visible = false;
@@ -210,7 +210,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.1));
 				portraitLeft.y = -750;
 				portraitLeft.x = -750;
 				portraitLeft.scrollFactor.set();
@@ -238,7 +238,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.1));
 				portraitLeft.y = -750;
 				portraitLeft.x = -750;
 				portraitLeft.scrollFactor.set();
@@ -254,7 +254,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.scrollFactor.set();
 				portraitRight.width = 100;
 				portraitRight.height = 100;
-				portraitRight.x = 700;
+				portraitRight.x = 675;
 				portraitRight.y = 180;
 				add(portraitRight);
 				portraitRight.visible = false;
@@ -266,7 +266,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.15));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.1));
 				portraitLeft.y = -750;
 				portraitLeft.x = -750;
 				portraitLeft.scrollFactor.set();

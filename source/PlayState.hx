@@ -1190,23 +1190,23 @@ class PlayState extends MusicBeatState
 				{
 					if (PlayState.SONG.song.toLowerCase()=='red-shift-ex')
 					{
-						boyfriend.x += 200;
+						boyfriend.x += 0;
 						boyfriend.y -= 50;
 						boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.9));
-						dad.x -= 175;
+						dad.x -= 150;
 						dad.y += 350;
 						gf.visible = false;
-						gf.x -= 175;
-						gf.y += 225;
+						gf.x -= 125;
+						gf.y += 275;
 					}
 
 					else 
 					{
-						boyfriend.x += 300;
+						boyfriend.x += 325;
 						boyfriend.y += 275;
-						dad.x -= 175;
+						dad.x -= 150;
 						dad.y += 350;
-						gf.x -= 125;
+						gf.x -= 25;
 						gf.y += 275;
 					}
 				}
