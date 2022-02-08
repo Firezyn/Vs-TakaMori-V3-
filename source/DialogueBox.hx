@@ -239,7 +239,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.2));
-				portraitLeft.y = -950;
+				portraitLeft.y = -750;
 				portraitLeft.x = -750;
 				portraitLeft.scrollFactor.set();
 				add(portraitLeft);
@@ -255,7 +255,7 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.width = 100;
 				portraitRight.height = 100;
 				portraitRight.x = 700;
-				portraitRight.y = 200;
+				portraitRight.y = 180;
 				add(portraitRight);
 				portraitRight.visible = false;
 			}

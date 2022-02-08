@@ -28,6 +28,7 @@ class HealthIcon extends FlxSprite
 		animation.add('nene', [19], 0, false, isPlayer);
 		animation.add('mio', [20], 0, false, isPlayer);
 		animation.add('foob', [22, 23], 0, false, isPlayer);
+		animation.add('foob-moon', [22, 23], 0, false, isPlayer);
 		animation.add('aloo', [24, 25], 0, false, isPlayer);
 		animation.add('calli', [28, 29], 0, false, isPlayer);
 		animation.add('kiara', [26, 27], 0, false, isPlayer);

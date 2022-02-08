@@ -5,6 +5,7 @@ bf-pixel
 dad
 tankman
 foob
+foob-moon
 aloo
 calli
 calliope
