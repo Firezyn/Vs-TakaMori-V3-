@@ -720,7 +720,7 @@ class PlayState extends MusicBeatState
 			 {
 						defaultCamZoom = 0.6;
 						curStage = 'sparks';
-						var bg:FlxSprite = new FlxSprite(-700, -200).loadGraphic(Paths.image('stages/sparks'));
+						var bg:FlxSprite = new FlxSprite(-900, -200).loadGraphic(Paths.image('stages/sparks'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.setGraphicSize(Std.int(bg.width * 1.0));
@@ -729,7 +729,7 @@ class PlayState extends MusicBeatState
              }
 			case 'cursednight':
 			 {
-						defaultCamZoom = 0.9;
+						defaultCamZoom = 0.8;
 						curStage = 'cursednight';
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/cursednight'));
 						bg.antialiasing = true;
@@ -1125,9 +1125,9 @@ class PlayState extends MusicBeatState
 				}		
 			case 'sparks':				
 				{
-					boyfriend.x -= 290;
+					boyfriend.x -= 490;
 					boyfriend.y += 10;
-					dad.x += 250;
+					dad.x += 50;
 					dad.y += 100;
 					boyfriend.visible = false;
 					gf.visible = false;
@@ -1193,7 +1193,7 @@ class PlayState extends MusicBeatState
 						boyfriend.x += 0;
 						boyfriend.y -= 50;
 						boyfriend.setGraphicSize(Std.int(boyfriend.width * 0.9));
-						dad.x -= 150;
+						dad.x -= 100;
 						dad.y += 350;
 						gf.visible = false;
 						gf.x -= 125;
@@ -1204,7 +1204,7 @@ class PlayState extends MusicBeatState
 					{
 						boyfriend.x += 325;
 						boyfriend.y += 275;
-						dad.x -= 150;
+						dad.x -= 100;
 						dad.y += 350;
 						gf.x -= 25;
 						gf.y += 275;

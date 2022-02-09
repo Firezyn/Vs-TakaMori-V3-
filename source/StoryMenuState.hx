@@ -27,7 +27,6 @@ class StoryMenuState extends MusicBeatState
 		['Tutorial'],
 		['Hinotori', 'Goodbye-Declaration', 'Grim-Reaper', 'Envy-Baby'],
 		['Sorairo-Days', 'Live-Again'],
-		['Sparks', 'Cursed-Night'],
 		['Myth-or-treat'],
 		['Vampire', 'Red-Shift'],
 		['Red', 'The-Bully', 'End-of-a-life'],
@@ -43,7 +42,6 @@ class StoryMenuState extends MusicBeatState
 		['gf','bf',''],
 		['gf','bf','dad'],
 		['gf','bf','mom'],
-		['dad','','mom'],
 		['spooky','','pico'],
 		['','question','senpai'],
 		['nene','aloe','calli'],
@@ -56,7 +54,6 @@ class StoryMenuState extends MusicBeatState
 		"Tutorial",
 		"The Phoenix and The Reaper",
 		"Takamori Karaoke!",
-		"Music Videos",
 		"Spooky?",
 		"Kiara+ Week",
 		"Calli+ Week",
@@ -284,11 +281,11 @@ class StoryMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
 				grpWeekText.members[curWeek].startFlashing();
-				if (curWeek == 5)
+				if (curWeek == 4)
 					{
 						stopspamming = true;
 					}
-				else if (curWeek == 6)
+				else if (curWeek == 5)
 					{
 						grpWeekCharacters.members[1].animation.play('aloeConfirm');
 						stopspamming = true;
