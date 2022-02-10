@@ -1035,7 +1035,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Irys Left Pose', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -56, 91);
+				addOffset("singUP", -56, 101);
 				addOffset("singRIGHT", -120, 3);
 				addOffset("singLEFT", 220, -3);
 				addOffset("singDOWN", 20, -80);

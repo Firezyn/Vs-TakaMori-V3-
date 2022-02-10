@@ -778,7 +778,7 @@ class PlayState extends MusicBeatState
 			 {
 						defaultCamZoom = 0.75;
 						curStage = 'end-of-calli';
-						var bg:FlxSprite = new FlxSprite(-575, -100);
+						var bg:FlxSprite = new FlxSprite(-675, -255);
 						bg.frames = Paths.getSparrowAtlas('stages/cross/calli_cross');
 						bg.setGraphicSize(Std.int(bg.width * 2.0));
 						bg.animation.addByPrefix('idle', 'Calli Cross', 24, true);
@@ -919,7 +919,7 @@ class PlayState extends MusicBeatState
 			 {
 						defaultCamZoom = 0.5;
 						curStage = 'caesura';
-						var bg:FlxSprite = new FlxSprite(-600, -180).loadGraphic(Paths.image('stages/caesura'));
+						var bg:FlxSprite = new FlxSprite(-600, -160).loadGraphic(Paths.image('stages/caesura'));
 						bg.antialiasing = true;
 						bg.setGraphicSize(Std.int(bg.width * 1.7));
 						bg.scrollFactor.set(0.9, 0.9);
@@ -1212,12 +1212,12 @@ class PlayState extends MusicBeatState
 				}
 			case 'end-of-calli':
 
-					boyfriend.x += 0;
-					boyfriend.y += 290;
-					dad.x -= 200;
-					dad.y += 300;
-					gf.x -= 100;
-					gf.y += 250;
+					boyfriend.x -= 100;
+					boyfriend.y += 115;
+					dad.x -= 300;
+					dad.y += 125;
+					gf.x -= 225;
+					gf.y += 95;
 					camHUD.visible = false;
 
 							new FlxTimer().start(3.7, function(tmr:FlxTimer)
@@ -1304,7 +1304,7 @@ class PlayState extends MusicBeatState
 					if (PlayState.SONG.song.toLowerCase() == 'bare-your-teeth')
 						{
 							boyfriend.x += 100;
-							boyfriend.y += 500;
+							boyfriend.y += 620;
 							boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.4));	
 							dad.visible = false;
 							gf.visible = false;
@@ -1318,9 +1318,9 @@ class PlayState extends MusicBeatState
 					else
 					{
 						boyfriend.x += 300;
-						boyfriend.y += 350;
+						boyfriend.y += 370;
 						dad.x -= 100;
-						dad.y += 1000;
+						dad.y += 1020;
 						dad.setGraphicSize(Std.int(dad.width * 1.4));	
 						gf.visible = false;
 						camHUD.visible = false;
