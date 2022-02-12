@@ -25,14 +25,14 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
-		['Hinotori', 'Goodbye-Declaration', 'Grim-Reaper', 'Envy-Baby'],
-		['Sorairo-Days', 'Live-Again'],
-		['Myth-or-treat'],
-		['Vampire', 'Red-Shift'],
-		['Red', 'The-Bully', 'End-of-a-life'],
-		['Phoenix-Bass', 'Chaos', 'Monocalli', 'Myth-Trouble'],
-		['Mining', 'Little-rat'],
-		['Bare-your-teeth', 'Joy-with-you']
+		['hinotori', 'goodbye-declaration', 'grim-reaper', 'envy-baby'],
+		['sorairo-days', 'live-again'],
+		['myth-or-treat'],
+		['vampire', 'red-shift'],
+		['red', 'the-bully', 'end-of-a-life'],
+		['phoenix-Bass', 'chaos', 'monocalli', 'myth-trouble'],
+		['mining', 'little-rat'],
+		['bare-your-teeth', 'joy-with-you']
 	];
 	var curDifficulty:Int = 1;
 

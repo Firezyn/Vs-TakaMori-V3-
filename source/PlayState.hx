@@ -778,7 +778,7 @@ class PlayState extends MusicBeatState
 			 {
 						defaultCamZoom = 0.75;
 						curStage = 'end-of-calli';
-						var bg:FlxSprite = new FlxSprite(-675, -255);
+						var bg:FlxSprite = new FlxSprite(-675, -235);
 						bg.frames = Paths.getSparrowAtlas('stages/cross/calli_cross');
 						bg.setGraphicSize(Std.int(bg.width * 2.0));
 						bg.animation.addByPrefix('idle', 'Calli Cross', 24, true);
@@ -1013,6 +1013,8 @@ class PlayState extends MusicBeatState
 				gfVersion = 'gf-pixel';
 			case 'mio':
 				gfVersion = 'mio';
+			case 'mio-moon':
+				gfVersion = 'mio-moon';
 			case 'nene':
 				gfVersion = 'nene';
 			default:
@@ -1196,8 +1198,8 @@ class PlayState extends MusicBeatState
 						dad.x -= 100;
 						dad.y += 350;
 						gf.visible = false;
-						gf.x -= 125;
-						gf.y += 275;
+						gf.x -= 50;
+						gf.y += 300;
 					}
 
 					else 
@@ -1206,8 +1208,8 @@ class PlayState extends MusicBeatState
 						boyfriend.y += 275;
 						dad.x -= 100;
 						dad.y += 350;
-						gf.x -= 25;
-						gf.y += 275;
+						gf.x -= 50;
+						gf.y += 300;
 					}
 				}
 			case 'end-of-calli':

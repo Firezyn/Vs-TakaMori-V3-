@@ -98,7 +98,7 @@ class DialogueBox extends FlxSpriteGroup
 				box.x = 100;
 				box.y = 400;
 
-			case 'grim-reaper' |'envy-baby' | 'red' | 'bully' | 'end-of-a-life': 
+			case 'grim-reaper' |'envy-baby' | 'red' | 'the-bully' | 'end-of-a-life': 
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking', 'shared');
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
@@ -149,14 +149,14 @@ class DialogueBox extends FlxSpriteGroup
 			}
 			case 'hinotori' |'goodbye-declaration': 
 			{
-				portraitLeft = new FlxSprite(-0, 40);
+				portraitLeft = new FlxSprite(-800, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('portraits/kiara', 'shared');
 				portraitLeft.animation.addByPrefix('enter', 'Kiara Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				portraitLeft.updateHitbox();
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.175));
 				portraitLeft.scrollFactor.set();
-				portraitLeft.x = -700;
+				portraitLeft.x = -1200;
 				portraitLeft.y = -750;
 				add(portraitLeft);
 				portraitLeft.visible = false;
@@ -210,10 +210,10 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
 				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.9));
 				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.1));
-				portraitLeft.y = -750;
-				portraitLeft.x = -750;
+				portraitLeft.y = 150;
+				portraitLeft.x = 25;
 				portraitLeft.scrollFactor.set();
 				add(portraitLeft);
 				portraitLeft.visible = false;
@@ -232,7 +232,7 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitRight);
 				portraitRight.visible = false;
 			}
-			case 'red' | 'bully' | 'end-of-a-life': 
+			case 'red' | 'the-bully' | 'end-of-a-life': 
 			{
 				portraitLeft = new FlxSprite(0, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
@@ -267,10 +267,10 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
 				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
 				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.9));
 				portraitLeft.updateHitbox();
-				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.1));
-				portraitLeft.y = -750;
-				portraitLeft.x = -750;
+				portraitLeft.y = 150;
+				portraitLeft.x = 25;
 				portraitLeft.scrollFactor.set();
 				add(portraitLeft);
 				portraitLeft.visible = false;
