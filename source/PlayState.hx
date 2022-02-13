@@ -695,7 +695,7 @@ class PlayState extends MusicBeatState
 
 						var bg:FlxSprite = new FlxSprite(-650, -100);
 						bg.frames = Paths.getSparrowAtlas('stages/tkbeach/tkbeach_bg');
-						bg.animation.addByPrefix('idle', 'takabeach bg', 24, true);
+						bg.animation.addByPrefix('idle', 'takabeach bg', 18, true);
 						bg.setGraphicSize(Std.int(bg.width * 2.5));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
@@ -709,7 +709,7 @@ class PlayState extends MusicBeatState
 			 {
 						defaultCamZoom = 1.1;
 						curStage = 'livestage';
-						var bg:FlxSprite = new FlxSprite(-1200, -50).loadGraphic(Paths.image('stages/livestage'));
+						var bg:FlxSprite = new FlxSprite(-1200, -75).loadGraphic(Paths.image('stages/livestage'));
 						bg.antialiasing = true;
 						bg.setGraphicSize(Std.int(bg.width * 0.7));
 						bg.scrollFactor.set(0.9, 0.9);
