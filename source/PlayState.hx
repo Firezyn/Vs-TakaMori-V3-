@@ -350,6 +350,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('envy-baby/envyDialogue'));
 			case 'sorairo-days':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('sorairo-days/sorairoDialogue'));
+			case 'live-again':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('live-again/liveDialogue'));
 			case 'vampire':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('vampire/vampireDialogue'));
 			case 'red-shift':
