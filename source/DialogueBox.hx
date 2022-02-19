@@ -232,7 +232,7 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitRight);
 				portraitRight.visible = false;
 			}
-			case 'red' | 'the-bully' | 'end-of-a-life': 
+			case 'red' | 'the-bully': 
 			{
 				portraitLeft = new FlxSprite(0, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('portraits/calli', 'shared');
@@ -261,6 +261,37 @@ class DialogueBox extends FlxSpriteGroup
 				portraitRight.visible = false;
 
 			}
+
+			case 'end-of-a-life': 
+			{
+				portraitLeft = new FlxSprite(0, 40);
+				portraitLeft.frames = Paths.getSparrowAtlas('portraits/bluelliope', 'shared');
+				portraitLeft.animation.addByPrefix('enter', 'Calli Portrait Enter instance 1', 24, false);
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+				portraitLeft.setGraphicSize(Std.int(portraitLeft.width * 0.9));
+				portraitLeft.updateHitbox();
+				portraitLeft.y = 150;
+				portraitLeft.x = 25;
+				portraitLeft.scrollFactor.set();
+				add(portraitLeft);
+				portraitLeft.visible = false;
+
+				portraitRight = new FlxSprite(0, 40);
+				portraitRight.frames = Paths.getSparrowAtlas('portraits/aloe','shared');
+				portraitRight.animation.addByPrefix('enter', 'Aloe portrait enter instance 1', 24, false);
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+				portraitRight.setGraphicSize(Std.int(portraitRight.width * 0.9));
+				portraitRight.updateHitbox();
+				portraitRight.scrollFactor.set();
+				portraitRight.width = 100;
+				portraitRight.height = 100;
+				portraitRight.x = 675;
+				portraitRight.y = 180;
+				add(portraitRight);
+				portraitRight.visible = false;
+
+			}
+
 			case 'grim-reaper' | 'sorairo-days' |'live-again':
 			{
 				portraitLeft = new FlxSprite(0, 40);
