@@ -24,13 +24,12 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		['Tutorial'],
 		['hinotori', 'goodbye-declaration', 'grim-reaper', 'envy-baby'],
 		['sorairo-days', 'live-again'],
 		['myth-or-treat'],
 		['vampire', 'red-shift'],
 		['red', 'the-bully', 'end-of-a-life'],
-		['phoenix-Bass', 'chaos', 'monocalli', 'myth-trouble'],
+		['phoenix-Bass', 'chaos', 'callichrome', 'myth-trouble'],
 		['mining', 'little-rat'],
 		['bare-your-teeth', 'joy-with-you']
 	];
@@ -39,7 +38,6 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
-		['gf','bf',''],
 		['gf','bf','dad'],
 		['gf','bf','mom'],
 		['spooky','','pico'],
@@ -51,7 +49,6 @@ class StoryMenuState extends MusicBeatState
 	];
 
 	var weekNames:Array<String> = [
-		"Tutorial",
 		"The Phoenix and The Reaper",
 		"Takamori Karaoke!",
 		"Spooky?",

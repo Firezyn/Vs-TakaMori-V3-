@@ -13,7 +13,7 @@ red:mori:6
 end-of-a-life:mori:6
 the-bully:mori:6
 chaos:bae:7
-monocalli:calli-spoopy:7
+callichrome:calli-spoopy:7
 myth-trouble:amesame-glitch:7
 mining:amesame:8
 little-Rat:bae:8

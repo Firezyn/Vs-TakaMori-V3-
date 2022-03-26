@@ -906,13 +906,6 @@ class PlayState extends MusicBeatState
 						stageCurtains.antialiasing = true;
 						stageCurtains.scrollFactor.set(1.3, 1.3);
 						stageCurtains.active = false;
-							
-						secondary_bg = new FlxSprite(-600, -180).loadGraphic(Paths.image('monocalli/Tails'));
-						secondary_bg.antialiasing = true;
-						secondary_bg.setGraphicSize(Std.int(stageFront.width * 1.0));
-						secondary_bg.scrollFactor.set(0.9, 0.9);
-						secondary_bg.visible = false;						
-						add(secondary_bg);
 
 						add(stageCurtains);
 				}
@@ -1501,7 +1494,7 @@ class PlayState extends MusicBeatState
 		case 'chaos' | 'little-rat':
 			healthBar.createFilledBar(0xFFFF0000, 0xFFf556ba);	
 
-		case 'monocalli':
+		case 'callichrome':
 			healthBar.createFilledBar(0xFFffffff, 0xFFff6600);	
 
 		case 'myth-trouble':
@@ -4110,7 +4103,7 @@ class PlayState extends MusicBeatState
 				FlxG.camera.flash(FlxColor.WHITE, 1);
 			}
 
-		if(Flash && curSong == 'monocalli')
+		if(Flash && curSong == 'callichrome')
 			{
 				FlxG.camera.flash(FlxColor.RED, 0.25);
 			}
@@ -4266,7 +4259,7 @@ class PlayState extends MusicBeatState
 					dad.color = 0xFF6c717a;
 			}
 		}
-		if (curSong == 'monocalli')
+		if (curSong == 'callichrome')
 		{
 			switch(curStep)
 						{
