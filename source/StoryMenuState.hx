@@ -29,7 +29,7 @@ class StoryMenuState extends MusicBeatState
 		['myth-or-treat'],
 		['vampire', 'red-shift'],
 		['red', 'the-bully', 'end-of-a-life'],
-		['phoenix-Bass', 'chaos', 'callichrome', 'myth-trouble'],
+		['chaos', 'callichrome', 'myth-trouble'],
 		['mining', 'little-rat'],
 		['bare-your-teeth', 'joy-with-you']
 	];
@@ -278,11 +278,11 @@ class StoryMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
 				grpWeekText.members[curWeek].startFlashing();
-				if (curWeek == 4)
+				if (curWeek == 3)
 					{
 						stopspamming = true;
 					}
-				else if (curWeek == 5)
+				else if (curWeek == 4)
 					{
 						grpWeekCharacters.members[1].animation.play('aloeConfirm');
 						stopspamming = true;

@@ -870,7 +870,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Calli Sing Note LEFT', 24);			
 				
 				addOffset('idle');
-				addOffset("singUP", 70, -20);
+				addOffset("singUP", 70, 40);
 				addOffset("singRIGHT", -50, 30);
 				addOffset("singLEFT", 130, -3);
 				addOffset("singDOWN", 70, -20);
