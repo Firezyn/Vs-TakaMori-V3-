@@ -30,7 +30,7 @@ class StoryMenuState extends MusicBeatState
 		['vampire', 'red-shift'],
 		['red', 'the-bully', 'end-of-a-life'],
 		['chaos', 'callichrome', 'myth-trouble'],
-		['mining', 'little-rat'],
+		['mining'],
 		['bare-your-teeth', 'joy-with-you']
 	];
 	var curDifficulty:Int = 1;

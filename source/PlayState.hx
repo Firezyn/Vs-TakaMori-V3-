@@ -1296,38 +1296,20 @@ class PlayState extends MusicBeatState
 					gf.visible = false;
 				}
 
-			case 'caesura':
-				{
-					if (PlayState.SONG.song.toLowerCase() == 'bare-your-teeth')
-						{
-							boyfriend.x += 100;
-							boyfriend.y += 620;
-							boyfriend.setGraphicSize(Std.int(boyfriend.width * 1.4));	
-							dad.visible = false;
-							gf.visible = false;
-							camHUD.visible = false;
-		
-							new FlxTimer().start(3.0, function(tmr:FlxTimer)
-								{
-									camHUD.visible = true;
-								});	
-						}
-					else
-					{
-						boyfriend.x += 300;
-						boyfriend.y += 370;
-						dad.x -= 100;
-						dad.y += 1020;
-						dad.setGraphicSize(Std.int(dad.width * 1.4));	
-						gf.visible = false;
-						camHUD.visible = false;
+			case 'caesura':									
+				boyfriend.x += 300;
+				boyfriend.y += 370;
+				dad.x -= 100;
+				dad.y += 1020;
+				dad.setGraphicSize(Std.int(dad.width * 1.4));	
+				gf.visible = false;
+				camHUD.visible = false;
 
-						new FlxTimer().start(2.7, function(tmr:FlxTimer)
-							{
-								camHUD.visible = true;
-							});	
-				 	}
-				}
+				new FlxTimer().start(1.7, function(tmr:FlxTimer)
+					{
+						camHUD.visible = true;
+					});	
+			
 
 			case 'mallEvil':
 				boyfriend.x += 320;
@@ -1499,11 +1481,8 @@ class PlayState extends MusicBeatState
 
 		case 'myth-trouble':
 			healthBar.createFilledBar(0xFF303030, 0xFF0C94F5);	
-
-		case 'bare-your-teeth':
-			healthBar.createFilledBar(0xFF414345, 0xFF42131e);
-
-		case 'joy-with-you':
+			
+		case 'joy-with-you' | 'bare-your-teeth':
 			healthBar.createFilledBar(0xFF42131e, 0xFFD55F56);
 	}
 
